@@ -3,7 +3,17 @@ console.log("Serverni boshlash")
 const express = require("express");
 const app = express();
 const http = require("http");
+const fs = require("fs");
 
+
+let user;
+fs.readFile("database/user.json", "utf8", (err, data) => {
+  if(err) {
+    console.log("ERROR:", err);
+  }else {
+    user = JSON.parse(data)
+  }
+});
 
 
 //1: Entry code
@@ -23,6 +33,10 @@ app.set("view engine", "ejs");
 app.post("/create-item", (req, res) => {
   console.log(req)
   res.json({test: "succes"});
+});
+
+app.get('/author', (req, res) => {
+  res.render("author",  {user: user});
 });
 
 app.get("/", function(req, res) {
