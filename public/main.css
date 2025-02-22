@@ -1,0 +1,500 @@
+
+.frame {
+  width: 100%;
+  height: 100%;
+  background: #947979;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ------ Whole main frame start-------*/
+.frame .main_frame {
+  position: relative;
+  width: 1440px;
+  height: 1312px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2px;
+  background: var(--Background, #F0F0F6);
+}
+/* ------ Whole main frame end -------*/
+
+
+
+/* ------ Whole left frame start -------*/
+.main_frame .left_frame {
+  position: relative;
+  width: 305px;
+  height: 1315px;
+  background: var(--White, #FFF);
+  flex-direction: column;
+}
+/* ------ Whole left frame end -------*/
+
+
+/* ------ Whole midd frame start -------*/
+.main_frame .midd_frame {
+  position: relative;
+  width: 971px;
+  height: 1260px;
+  margin-left: 34px;
+  margin-right: 22px;
+  display: flex;
+  flex-direction: column;
+}
+/* ------ Whole midd frame end -------*/
+
+
+/* ------ Whole right frame start -------*/
+.main_frame .right_frame {
+  position: relative;
+  width: 108px;
+  height: 1315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--White, #FFF);
+  flex-direction: column;
+
+
+}
+/* ------ Whole right frame end -------*/
+
+
+/* ------ left frame itmes start-------*/
+.main_frame .left_frame .marginer {
+  position: relative;
+  width: 220px;
+  height: 0px;
+  margin-left: 40px;
+  margin-top: 39px;
+  margin-bottom: 25px;
+  /* background: blue; */
+  border: 1.5px solid  #F0F0F6;
+}
+
+
+/* ------ left profile start -------*/
+.main_frame .left_frame .left_profile {
+  position: relative;
+  width: 221px;
+  height: 267px;
+  display: flex;
+  margin-left: 37px;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_frame .left_frame .left_profile .left_profile-1 {
+  position: relative;
+  width: 156px;
+  height: 142px;
+  display: flex;
+  /* flex-direction: column; */
+  margin-bottom: 30px;
+} 
+
+
+.main_frame .left_frame .left_profile .left_profile-2 {
+  position: relative;
+  display: flex;
+  width: 66px;
+  height: 20.846px;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--Black, #2B2B2B);
+
+  /* H4 - 18px */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.6%; /* 22.248px */
+  text-transform: capitalize;
+} 
+
+.main_frame .left_frame .left_profile .left_profile-3 {
+  width: 147.836px;
+  height: 24.31px;
+  flex-shrink: 0;
+  color: var(--Paragraph-Font, #767676);
+  font-kerning: none;
+  font-feature-settings: 'calt' off;
+  text-align: center;
+
+  /* Paragraph Progress - 15 */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+}
+
+.main_frame .left_frame .left_profile .left_profile-icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 221px;
+  margin-top: 19px;
+}
+
+.link_href {
+  text-decoration: none;
+  color: black;
+}
+.icon {
+  position: relative;
+  width: 25px;
+  height: 23px;
+  border-radius: 50;
+  filter: drop-shadow(0 4px 4px rgb(132, 116, 116));
+  background: #ffb400;
+}
+
+.icon-1 {
+  position: relative;
+  left: 30%;
+  right: 28%;
+  margin-top: 5.86px;
+}
+/* ------ left profile end-------*/
+
+
+
+
+
+/* ------ left about start-------*/
+.main_frame .left_frame .left_about {
+  position: relative;
+  width: 221px;
+  height: 126px;
+  margin-left: 47px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  /* background: red */
+}
+
+.main_frame .left_frame .left_about .left_about-1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 221px;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.left_about-1 .left_about-label_1 {
+  width: 33.15px;
+  color: #6c757d;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #FFB400;
+}
+
+ .left_about-label_2, .left_about-label_3,
+ .left_about-label_4  {
+  width: 80px;
+  color: #6c757d;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #FFB400;
+}
+
+.left_about-1 .left_about-content {
+  color: #212529;
+  font-size: 1rem;
+}
+/* ------ left about end-------*/
+
+
+
+
+
+
+ /* -------Languages start ------*/
+/*-------- skills start------- */
+.main_frame .left_frame .left_languages {
+  color: var(--Black, #2B2B2B);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 22.248px */
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 153px;
+  margin-top: 24px;
+  margin-left: 47px;
+  /* padding: 24px; */
+  border-radius: 8px;
+}
+
+ .left_skills {
+  color: var(--Black, #2B2B2B);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 22.248px */
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 242px;
+  margin-top: 24px;
+  margin-left: 47px;
+  /* padding: 24px; */
+  border-radius: 8px;
+}
+
+.skills-title {
+  position: relative;
+  color: #212529;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.skill-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  margin-top: 10px;
+  position: relative;
+  color: #091824;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.skill-percent {
+  position: relative;
+  color: #FFB400;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.progress-bar {
+  position: relative;
+  background-color: #e9ecef;
+  height: 3.5px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #FFB400;
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Percentage widths */
+.progress-100 { width: 100%; }
+.progress-80 { width: 80%; }
+.progress-60 { width: 60%; }
+.progress-90 { width: 90%; }
+.progress-85 { width: 85%; }
+.progress-75 { width: 75%; }
+
+
+ /* -------Languages start ------*/
+/*-------- skills end------- */
+
+
+
+
+ /* -------extra skills start ------*/
+.main_frame .left_frame .left_extra_skills {
+  color: var(--Black, #2B2B2B);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 22.248px */
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  height: 148px;
+  margin-top: 24px;
+  margin-left: 47px;
+  border-radius: 8px;
+}
+
+
+.left_extra_skills-title {
+  position: relative;
+  color: #212529;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.left_extra_skill-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: #6c757d;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.left_extra_skill-items {
+  line-height: 1.6;
+  margin: 0;
+}
+ /* -------extra skills end ------*/
+/* ------ left frame itmes END -------*/
+
+
+
+
+
+
+
+
+
+
+/* ------ Midd frame itmes START -------*/
+.midd_frame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 32px auto;
+  padding: 32px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+  /* Content Blocks */
+  .section-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+/* Typography */
+.main-title {
+    font-size: 32px;
+    color: #2d3436;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.description {
+    color: #636e72;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 24px 0;
+}
+
+/* Services Header */
+.services-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.hire-me {
+    color: #00b894;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Service Items */
+.service-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.service-title {
+    color: #2d3436;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.service-detail {
+    color: #636e72;
+    font-size: 16px;
+}
+
+/* Advertising Section */
+.ad-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    padding: 24px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.cta-button {
+    background: #00b894;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: auto;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #009d7a;
+    transform: translateY(-1px);
+}
+
+/* ------ Midd frame itmes END -------*/
+
