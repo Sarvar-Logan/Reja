@@ -17,10 +17,8 @@
     <div class="main_frame">
 
       <!-- All left frame start -->
-
-
-      <!-- Profile start -->
       <div class="left_frame">
+        <!-- Profile start -->
         <div class="left_profile">
           <div class="left_profile-1">
             <img src="images/profile.png" width="156px" height="142px" alt="" >
@@ -69,86 +67,44 @@
 
         </div>
         <div class="marginer"></div>
+        
       <!-- Profile end -->
 
 
 
-
-      <!-- Profile start -->
-        <div class="left_about">
-          <div class="left_about-1">
-            <span class="left_about-label_1">Age:</span>
-            <span class="left_about-content"><%=user.name%></span>
-          </div>
-
-          <div class="left_about-1">
-            <span class="left_about-label_2">Residence:</span>
-            <span class="left_about-content"><%=user.residence%></span>
-          </div>
-          <div class="left_about-1">
-            <span class="left_about-label_3">Profession:</span>
-            <span class="left_about-content"><%=user.profession%></span>
-          </div>
-          <div class="left_about-1">
-            <span class="left_about-label_4">Address:</span>
-            <span class="left_about-content"><%=user.address%></span>
-          </div>
+      <!-- About start -->
+      <div class="left_about">
+        <div class="left_about-1">
+          <span class="left_about-label_1">Age:</span>
+          <span class="left_about-content"><%=user.name%></span>
         </div>
-        <div class="marginer"></div>
-      <!-- Profile end -->
 
-
-
-      <!-- Languages start -->
-        <div class="left_languages">
-            <h2 class="skills-title">Languages</h2>
-            
-            <div class="skill-item">
-                <div class="skill-header">
-                    <span class="skill-name"><%=user.language[0]%></span>
-                    <span class="skill-percent">100%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill progress-100"></div>
-                </div>
-            </div>
-    
-            <div class="skill-item">
-                <div class="skill-header">
-                    <span class="skill-name"><%=user.language[1]%></span>
-                    <span class="skill-percent">80%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill progress-80"></div>
-                </div>
-            </div>
-    
-            <div class="skill-item">
-                <div class="skill-header">
-                    <span class="skill-name"><%=user.language[2]%></span>
-                    <span class="skill-percent">60%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill progress-60"></div>
-                </div>
-            </div>
+        <div class="left_about-1">
+          <span class="left_about-label_2">Residence:</span>
+          <span class="left_about-content"><%=user.residence%></span>
         </div>
-        <div class="marginer"></div>
-      <!-- Languages end -->
+        <div class="left_about-1">
+          <span class="left_about-label_3">Profession:</span>
+          <span class="left_about-content"><%=user.profession%></span>
+        </div>
+        <div class="left_about-1">
+          <span class="left_about-label_4">Address:</span>
+          <span class="left_about-content"><%=user.address%></span>
+        </div>
+    </div>
+    <div class="marginer"></div>
+    <!-- About end -->
 
 
 
-
-
-
-      <!---- skills start ----->
-        <div class="left_skills">
-          <h2 class="skills-title">Skills</h2>
-            
+    <!-- Languages start -->
+    <div class="left_languages">
+          <h2 class="skills-title">Languages</h2>
+          
           <div class="skill-item">
               <div class="skill-header">
-                  <span class="skill-name"><%=user.skills[0]%></span>
-                  <span class="skill-percent">90%</span>
+                  <span class="skill-name"><%=user.language[0]%></span>
+                  <span class="skill-percent">100%</span>
               </div>
               <div class="progress-bar">
                   <div class="progress-fill progress-100"></div>
@@ -157,8 +113,8 @@
   
           <div class="skill-item">
               <div class="skill-header">
-                  <span class="skill-name"><%=user.skills[1]%></span>
-                  <span class="skill-percent">85%</span>
+                  <span class="skill-name"><%=user.language[1]%></span>
+                  <span class="skill-percent">80%</span>
               </div>
               <div class="progress-bar">
                   <div class="progress-fill progress-80"></div>
@@ -167,37 +123,79 @@
   
           <div class="skill-item">
               <div class="skill-header">
-                  <span class="skill-name"><%=user.skills[2]%></span>
-                  <span class="skill-percent">80%</span>
+                  <span class="skill-name"><%=user.language[2]%></span>
+                  <span class="skill-percent">60%</span>
               </div>
               <div class="progress-bar">
                   <div class="progress-fill progress-60"></div>
               </div>
           </div>
+    </div>
+    <div class="marginer"></div>
+    <!-- Languages end -->
 
-          <div class="skill-item">
+
+
+
+
+
+    <!---- skills start ----->
+    <div class="left_skills">
+        <h2 class="skills-title">Skills</h2>
+          
+        <div class="skill-item">
             <div class="skill-header">
-                <span class="skill-name"><%=user.skills[3]%></span>
-                <span class="skill-percent">75%</span>
+                <span class="skill-name"><%=user.skills[0]%></span>
+                <span class="skill-percent">90%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill progress-100"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-header">
+                <span class="skill-name"><%=user.skills[1]%></span>
+                <span class="skill-percent">85%</span>
             </div>
             <div class="progress-bar">
                 <div class="progress-fill progress-80"></div>
             </div>
-          </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-header">
+                <span class="skill-name"><%=user.skills[2]%></span>
+                <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill progress-60"></div>
+            </div>
+        </div>
 
         <div class="skill-item">
           <div class="skill-header">
-              <span class="skill-name"><%=user.skills[4]%></span>
-              <span class="skill-percent">85%</span>
+              <span class="skill-name"><%=user.skills[3]%></span>
+              <span class="skill-percent">75%</span>
           </div>
           <div class="progress-bar">
               <div class="progress-fill progress-80"></div>
           </div>
+        </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+            <span class="skill-name"><%=user.skills[4]%></span>
+            <span class="skill-percent">85%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill progress-80"></div>
+        </div>
       </div>
 
-       </div>
-      <div class="marginer"></div>
-      <!----- skills end ---->
+    </div>
+    <div class="marginer"></div>
+    <!----- skills end ---->
 
 
 
@@ -205,45 +203,25 @@
 
 
 
-      <!----extra skills start ----->
+    <!----extra skills start ----->
 
-        <div class="left_extra_skills">
-          <h2 class="left_extra_skills-title">Extra Skills</h2>
-        
+    <div class="left_extra_skills">
+        <h2 class="left_extra_skills-title">Extra Skills</h2>
+      
           <div class="left_extra_skill-group">
-              <p class="left_extra_skill-items">Bootstrap, Materialize</p>
-              <p class="left_extra_skill-items">Stylus, Sass, Less</p>
-              <p class="left_extra_skill-items">Gulp, Webpack, Grunt</p>
-              <p class="left_extra_skill-items">GIT Knowledge</p>
+            <p class="left_extra_skill-items">Bootstrap, Materialize</p>
+            <p class="left_extra_skill-items">Stylus, Sass, Less</p>
+            <p class="left_extra_skill-items">Gulp, Webpack, Grunt</p>
+            <p class="left_extra_skill-items">GIT Knowledge</p>
           </div>
-        </div>
         <div class="marginer"></div>
     </div>
-      <!----extra skills end ----->
+    <!----extra skills end ----->
 
 
+      </div>
+      <div class="marginer"></div>
       <!-- All left frame end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -257,102 +235,189 @@
 
 
       <!-- All midd frame start -->
-
-     <div class="midd_frame">
-      <div class="section-block">
-        <h1 class="main-title">Doctor neurologists in OHSU Hospital</h1>
-        <p class="description">
-            Lorem Ipsum Dolor Sit Amet, Connecticutr Adipiscing<br>
-            Elit. Et, Volutpat Feugiat Placerat Labortis. Natoque<br>
-            Rutrum Semper Sed Suspendisse Nunc Lectus.
-        </p>
-     </div>
-
-      <div class="divider"></div>
-
-      <div class="services-header">
-          <h2 class="hire-me">HIRE ME →</h2>
-          <h3 class="main-title" style="font-size: 24px">My Services</h3>
-      </div>
-
-      <div class="section-block">
-          <p class="description">
-              Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor<br>
-              Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit.<br>
-              Lorem Ipsum
+    <div class="main_frame midd_frame">
+      <div class="hero_section">
+        <div class="hero_midd-content">
+          <h1 class="hero_title">Doctor neurologists in OHSU Hospital</h1>
+          <p class="hero_desc">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Etiam Volutpat Feugiat Placerat Lobortis
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.
           </p>
-      </div>
-
-
-
-    <div class="midd_services">
-      <a class="link_href" href="">
-        <div class="service_icon">
-         <img src="icons/coding.png" class="icon-2" />
+          <button class="hire_me">Hire Me</button>
         </div>
-      </a>
-      <div class="service-title">Web Development</div>
-      <div class="service-detail">Blog, E-Commerce</div>
-    </div>
-
-
-    <div class="midd_services">
-      <a class="link_href" href="">
-        <div class="service_icon">
-         <img src="icons/illustration.svg" class="icon-2" />
+        <div class="midd_image">
+           <img class="image_content" src="images/Your-image.png" width="156px" height="142px" alt="" >
         </div>
-      </a>
-      <div class="service-title">UI/UX Design</div>
-      <div class="service-detail">Mobile App, Website Design</div>
-    </div>
+      </div>
 
 
-    <div class="midd_services">
-      <a class="link_href" href="">
-        <div class="service_icon">
-         <img src="icons/Microphone.svg" class="icon-2" />
+      
+      <div class="services_section">
+
+        <div class="midd_services-content">
+          <h2 class="services_title">My Services</h2>
+          <p class="services_desc">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Lorem ipsum dolor sit amet, </p>  
         </div>
-      </a>
-      <div class="service-title">Sound design</div>
-      <div class="service-detail">Voice Over, Beat Making</div>
-    </div>
 
 
-      <div class="service-item">
-          <h4 class="service-title">Game Design</h4>
-          <span class="service-detail">Character Design, Props & Objects</span>
+
+
+
+
+
+
+          <div class="services_cards-1">
+
+
+              <div class="service_cards_1-1">
+                <a class="link_href" href="">
+                  <div class="midd_icon">
+                    <img src="icons/coding.png" class="icon-1" />
+                  </div>
+                </a>
+                <h3>Web Development</h3> 
+                <p>Blog, E-Commerce</p> 
+              </div>
+              
+
+              <div class="service_cards_1-1">
+                <a class="link_href" href="">
+                  <div class="midd_icon">
+                    <img src="icons/illustration.svg" class="icon-1" />
+                  </div>
+                </a>
+                <h3>UI/UX Design</h3> 
+                <p>Mobile App, Website Design</p> 
+              </div>
+
+              <div class="service_cards_1-1">
+                <a class="link_href" href="">
+                  <div class="midd_icon">
+                    <img src="icons/Microphone.svg" class="icon-1" />
+                  </div>
+                </a>
+                <h3>Sound Design</h3> 
+                <p>Voice Over, Beat Making</p> 
+              </div>
+
+          </div>  
+              
+              
+              
+
+
+          <div class="services_cards-1">
+
+
+            <div class="service_cards_1-1">
+              <a class="link_href" href="">
+                <div class="midd_icon">
+                  <img src="icons/game-development.svg" class="icon-1" />
+                </div>
+              </a>
+              <h3>Game Design</h3> 
+              <p>Character Design, Props & Objects</p> 
+            </div>
+            
+
+            <div class="service_cards_1-1">
+              <a class="link_href" href="">
+                <div class="midd_icon">
+                  <img src="icons/Photographer.svg" class="icon-1" />
+                </div>
+              </a>
+              <h3>Photography</h3> 
+              <p>Portrait, Product Photography</p> 
+            </div>
+
+            <div class="service_cards_1-1">
+              <h3>advertising</h3> 
+              <p>Marketing & Promotions</p> 
+              <button class="cta-button" style="color: var(--Yellow, #FFB400);">ORDER NOW →</button>
+            </div>
+
+        </div>  
+            
+
       </div>
+   </div>
+      <!-- All midd frame end -->
 
-      <div class="service-item">
-          <h4 class="service-title">Photography</h4>
-          <span class="service-detail">Portrait, Product Photography</span>
-      </div>
 
-      <div class="ad-section">
-          <p class="description">
-              Lorem Ipsum Dolor Sit Amet,<br>
-              Consectetur Adipiscing Elit. Vitae<br>
-              Nulla Diam In Ac Dictum A Urna<br>
-              Viverra Morbi.
-          </p>
-          <button class="cta-button">ORDER NOW →</button>
-      </div>
+
+
+
+      <!-- All right frame start -->
+     <div class="main_frame right_frame">
+
+
+      
+          <div class="theme_toggle">
+            <a class="link href" href="">
+              <div class="right_icon">
+                <img src="icons/Contrast.svg" class="icon-2" />
+              </div>
+            </a>
+         </div>
+
+          
+       
+
+
+
+          <div class="nav_icons">
+            <a class="link href" href="">
+              <div class="right_icon" style="background: #FFB400;">
+                <img src="icons/Home.svg" class="icon-2" />
+              </div>
+            </a>
+
+
+
+
+            <a class="link href" href="">
+              <div class="right_icon">
+                <img src="icons/file-code.svg" class="icon-2" />
+              </div>
+            </a>
+
+
+              
+
+            <a class="link href" href="">
+              <div class="right_icon">
+                <img src="icons/cv.svg" class="icon-2" />
+              </div>
+            </a>
+
+
+            <a class="link href" href="">
+              <div class="right_icon">
+                <img src="icons/Vector.svg" class="icon-2" />
+              </div>
+            </a>
+
+
+            <a class="link href" href="">
+              <div class="right_icon">
+                <img src="icons/Blog.svg" class="icon-2" />
+              </div>
+            </a>
+
+
+            <a class="link href" href="">
+              <div class="right_icon">
+                <img src="icons/Contact.svg" class="icon-2" />
+              </div>
+            </a>
+
+          </div>
+          
      </div>
-
-      <!-- All left frame end -->
-
-
-
-
-
-
-
-
-
-
-      <div class="right_frame"></div>
-
-    </div>
+      <!-- All right frame end -->
+ 
+ 
+ 
+   </div>
   </div>
 </body>
 
