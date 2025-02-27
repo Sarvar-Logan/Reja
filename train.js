@@ -100,15 +100,31 @@
 
 // run();
 
+// MIT A-TASK
+// function countLetter(letter, word) {
+//   let count = 0;
+//   for (let char of word) {
+//       if (char === letter) {
+//           count++;
+//       }
+//   }
+//   return count;
+// }
 
-function countLetter(letter, word) {
+// console.log(countLetter("e", "engineer")); 
+
+
+
+
+
+// MIT B-TASK
+function countDigits(str) {
   let count = 0;
-  for (let char of word) {
-      if (char === letter) {
-          count++;
-      }
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] >= "0" && str[i] <= "9") {
+      count++;
+    }
   }
   return count;
 }
-
-console.log(countLetter("e", "engineer")); 
+console.log(countDigits("adsodi32khkhkh65kjkjkkb22bkb")); 
