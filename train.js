@@ -154,49 +154,73 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud*/
 
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non; 
-    this.lagmon = lagmon; 
-    this.cola = cola; 
-  }
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non; 
+//     this.lagmon = lagmon; 
+//     this.cola = cola; 
+//   }
 
-  // Vaqtni olish methodi
-  vaqt() {
-    const now = new Date();
-    return `${now.getHours()}:${now.getMinutes()}`;
-  }
+//   // Vaqtni olish methodi
+//   vaqt() {
+//     const now = new Date();
+//     return `${now.getHours()}:${now.getMinutes()}`;
+//   }
 
-  // Qoldiq methodi
-  qoldiq() {
-    console.log(`Hozir ${this.vaqt()}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`);
-  }
+//   // Qoldiq methodi
+//   qoldiq() {
+//     console.log(`Hozir ${this.vaqt()}da ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`);
+//   }
 
-  // Sotish methodi
-  sotish(mahsulot, soni) {
-    if (this[mahsulot] !== undefined && this[mahsulot] >= soni) {
-      this[mahsulot] -= soni;
-      console.log(`${this.vaqt()}da ${soni}ta ${mahsulot} sotildi!`);
-    } else if (this[mahsulot] === undefined) {
-      console.log(`${this.vaqt()}da ${mahsulot} mavjud emas!`);
-    } else {
-      console.log(`${this.vaqt()}da ${mahsulot} dan yetarli miqdor yo'q!`);
-    }
-  }
+//   // Sotish methodi
+//   sotish(mahsulot, soni) {
+//     if (this[mahsulot] !== undefined && this[mahsulot] >= soni) {
+//       this[mahsulot] -= soni;
+//       console.log(`${this.vaqt()}da ${soni}ta ${mahsulot} sotildi!`);
+//     } else if (this[mahsulot] === undefined) {
+//       console.log(`${this.vaqt()}da ${mahsulot} mavjud emas!`);
+//     } else {
+//       console.log(`${this.vaqt()}da ${mahsulot} dan yetarli miqdor yo'q!`);
+//     }
+//   }
 
-  // Qabul qilish methodi
-  qabul(mahsulot, soni) {
-    if (this[mahsulot] !== undefined) {
-      this[mahsulot] += soni;
-      console.log(`${this.vaqt()}da ${soni}ta ${mahsulot} qabul qilindi!`);
-    } else {
-      console.log(`${this.vaqt()}da ${mahsulot} mavjud emas!`);
-    }
+//   // Qabul qilish methodi
+//   qabul(mahsulot, soni) {
+//     if (this[mahsulot] !== undefined) {
+//       this[mahsulot] += soni;
+//       console.log(`${this.vaqt()}da ${soni}ta ${mahsulot} qabul qilindi!`);
+//     } else {
+//       console.log(`${this.vaqt()}da ${mahsulot} mavjud emas!`);
+//     }
+//   }
+// }
+
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq();
+// shop.sotish('non', 3);
+// shop.qabul('cola', 4);
+// shop.qoldiq();
+
+
+
+
+
+//##################################################################################################################################################################################################################
+/*D-TASK: 
+
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;*/
+
+function checkContent(string1, string2) {
+  if (string1.length !== string2.length) {
+    return false;
   }
+  
+  let sortedS1 = string1.split('').sort().join('');
+  let sortedS2 = string2.split('').sort().join('');
+  
+  return sortedS1 === sortedS2;
 }
 
-const shop = new Shop(4, 5, 2);
-shop.qoldiq();
-shop.sotish('non', 3);
-shop.qabul('cola', 4);
-shop.qoldiq();
+console.log(checkContent("mitgroup", "gmtiprou"));
+console.log(checkContent("killer", "liiiere"))
