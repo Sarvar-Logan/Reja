@@ -211,16 +211,38 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;*/
 
-function checkContent(string1, string2) {
-  if (string1.length !== string2.length) {
-    return false;
-  }
+// function checkContent(string1, string2) {
+//   if (string1.length !== string2.length) {
+//     return false;
+//   }
   
-  let sortedS1 = string1.split('').sort().join('');
-  let sortedS2 = string2.split('').sort().join('');
+//   let sortedS1 = string1.split('').sort().join('');
+//   let sortedS2 = string2.split('').sort().join('');
   
-  return sortedS1 === sortedS2;
+//   return sortedS1 === sortedS2;
+// }
+
+// console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("killer", "liiiere"))
+
+
+
+
+//##################################################################################################################################################################################################################
+/*
+E-TASK: 
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+
+function teskariString(string) {
+  const stringToArray = string.split("");
+  const reverseArray = stringToArray.reverse();
+  const arrayToString = reverseArray.join("")
+  return arrayToString;
 }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
-console.log(checkContent("killer", "liiiere"))
+const reverseFunction = teskariString("salom")
+
+console.log(reverseFunction)
