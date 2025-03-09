@@ -22,7 +22,7 @@ const db = require("./server").db();
 const mongoDB = require("mongodb")
 
 //1: Entry code
-app.use(express.static("public"));
+app.use(express.static("public"));   //MIDDLEWARE(orqliq mantiq) design pattern
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
