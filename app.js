@@ -22,9 +22,9 @@ const db = require("./server").db();
 const mongoDB = require("mongodb")
 
 //1: Entry code
-app.use(express.static("public"));   //MIDDLEWARE(orqliq mantiq) design pattern
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.static("public"));   //MIDDLEWARE(orqliq mantiq): design pattern tashqi olamga chiqlaydi
+app.use(express.json());             //MIDDLEWARE => Rest API bu code shunga xizmat qilyapti
+app.use(express.urlencoded({extended: true}));  //MIDDLEWARE => Traditional API uchun xizmat qilyapti
 
 //2: Sessoin code
 

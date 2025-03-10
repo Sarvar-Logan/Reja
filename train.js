@@ -1,6 +1,6 @@
                      // callback functions
 
-// console. log("Jack Ma maslahatlari");
+// console.log("Jack Ma maslahatlari");
 // const list = [
 
 // "yahshi talaba boling", // 0-20
@@ -236,13 +236,40 @@ Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni tes
 MASALAN: getReverse("hello") return qilsin "olleh"
 */
 
-function teskariString(string) {
-  const stringToArray = string.split("");
-  const reverseArray = stringToArray.reverse();
-  const arrayToString = reverseArray.join("")
-  return arrayToString;
+// function teskariString(string) {
+//   const stringToArray = string.split("");
+//   const reverseArray = stringToArray.reverse();
+//   const arrayToString = reverseArray.join("")
+//   return arrayToString;
+// }
+
+// const reverseFunction = teskariString("salom")
+
+// console.log(reverseFunction)
+
+
+
+//##################################################################################################################################################################################################################
+/*
+TASK F
+
+Yagona string argumentga ega findDoublers nomli function tuzing
+Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+true yokida false natija qaytarsin.
+
+MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
+*/
+
+function findDoublers(s) {
+  let harf = [];
+  for (let char of s) {
+      if (harf.indexOf(char) !== -1) {
+          return true;
+      }
+      harf.push(char);
+  }
+  return false;
 }
+ 
 
-const reverseFunction = teskariString("salom")
-
-console.log(reverseFunction)
+console.log(findDoublers('hello'));
